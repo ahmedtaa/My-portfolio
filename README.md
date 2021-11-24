@@ -21,7 +21,7 @@
 👤 **Ahmedta**
 
 - GitHub: [@ahmedtaa](https://github.com/ahmedtaa)
-- Twitter: [@_ahmedta](https://twitter.com/_ahmedta_)
+- Twitter: [@_ahmedta](https://twitter.com/_ahmedta)
 
 
 
