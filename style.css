@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-.main-container {
+.main-section {
   background-image: url(img/header-illsutration-mobilebg.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,6 +68,14 @@ body {
   font-size: 20px;
 }
 
+.aboutme-container > p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
 .social-icons {
   width: 50%;
   list-style-type: none;
@@ -75,10 +83,119 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .social-icons > li {
   display: inline;
 
   /* margin-right: 5px; */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 100px;
+  align-content: space-around;
+  margin: 100px 30px 150px 30px;
+  justify-content: center;
+}
+
+.action-btn {
+  text-align: center;
+}
+
+.grid-item {
+  background-color: white;
+  display: flex;
+  height: 580px;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin: -6px -6px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 220px;
+}
+
+.flex-item2 {
+  text-align: center;
+}
+
+.flex-item2 h2 {
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.flex-item3 ul {
+  list-style-type: none;
+}
+
+.flex-item4 {
+  text-align: center;
+}
+
+.fix {
+  text-align: center;
+}
+
+.box-item button {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgb(12, 204, 76);
+  margin-top: 30px;
+}
+
+.flex-item4 button {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgb(12, 204, 76);
+  margin-top: 30px;
+}
+
+.pill-btn {
+  /* border: 2px solid orangered; */
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  border-radius: 5px;
+  text-align: center;
+  background: #ebebff;
+  padding: 5px;
+}
+
+.flex-item3 {
+  display: flex;
+  /* margin-left: 50px; */
+}
+
+.inner-flex-item {
+  /* border: 2px solid orangered; */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  width: 100%;
 }
