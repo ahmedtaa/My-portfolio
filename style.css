@@ -152,7 +152,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.03em;
   color: #fff;
-  background-color: rgb(12, 204, 76);
+  background-color: #36b37f;
   margin-top: 30px;
 }
 
@@ -173,8 +173,27 @@ body {
   align-self: center;
 }
 
+.fixx {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #36b37f;
+  margin-top: 30px;
+  margin-left: 60px;
+  align-self: center;
+}
+
 button:active {
   background-color: #008552;
+  border-radius: 4px;
 }
 
 button:hover {
@@ -206,6 +225,7 @@ button:hover {
 }
 
 .wrap {
+  align-content: center;
   padding: 30px;
 }
 
@@ -219,6 +239,7 @@ button:hover {
 }
 
 .aboutme-container {
+  display: grid;
   background-image: url('./img/abt-left.png'), url('./img/abt-bbgg.png');
   background-position: left bottom, 120% 0%;
   background-repeat: no-repeat, no-repeat;
