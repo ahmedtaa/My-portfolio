@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-.main-container {
+.main-section {
   background-image: url(img/header-illsutration-mobilebg.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,6 +68,14 @@ body {
   font-size: 20px;
 }
 
+.aboutme-container > p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
 .social-icons {
   width: 50%;
   list-style-type: none;
@@ -75,10 +83,166 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .social-icons > li {
   display: inline;
+}
 
-  /* margin-right: 5px; */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  margin: 15px;
+}
+
+.works {
+  display: grid;
+}
+
+.action-btn {
+  text-align: center;
+}
+
+.grid-item {
+  background-color: white;
+  display: flex;
+  height: 580px;
+  flex-direction: column;
+  margin: -6px -6px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 220px;
+}
+
+.flex-item2 {
+  text-align: center;
+}
+
+.flex-item2 h2 {
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: Poppins, sans-serif;
+}
+
+.flex-item3 ul {
+  list-style-type: none;
+}
+
+.fix {
+  text-align: center;
+  color: #36b37f;
+}
+
+.box-item button {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #36b37f;
+  margin-top: 30px;
+}
+
+.flex-item4 {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #36b37f;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.fixx {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #36b37f;
+  margin-top: 30px;
+  margin-left: 60px;
+  align-self: center;
+}
+
+button:active {
+  background-color: #008552;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.pill-btn {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  color: #3a4a42;
+  border-radius: 5px;
+  text-align: justify;
+  background: #d0d9d4;
+  padding: 10px;
+}
+
+.inner-flex-item {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+}
+
+.work-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 20px;
+}
+
+.wrap {
+  align-content: center;
+  padding: 30px;
+}
+
+.wrap p {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: Poppins, sans-serif;
+  color: #42526e;
+  line-height: 32px;
+  text-align: center;
+}
+
+.aboutme-container {
+  display: grid;
+  background-image: url('./img/abt-left.png'), url('./img/abt-bbgg.png');
+  background-position: left bottom, 120% 0%;
+  background-repeat: no-repeat, no-repeat;
 }
