@@ -129,6 +129,7 @@ body {
   color: #172b4d;
   font-weight: bold;
   font-size: 32px;
+  font-family: Poppins, sans-serif;
 }
 
 .flex-item3 ul {
@@ -141,6 +142,7 @@ body {
 
 .fix {
   text-align: center;
+  color: #36b37f;
 }
 
 .box-item button {
@@ -154,7 +156,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   background-color: rgb(12, 204, 76);
   margin-top: 30px;
 }
@@ -170,7 +172,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   background-color: rgb(12, 204, 76);
   margin-top: 30px;
 }
@@ -178,17 +180,17 @@ body {
 .pill-btn {
   /* border: 2px solid orangered; */
   font-size: 15px;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+  color: #3a4a42;
   border-radius: 5px;
-  text-align: center;
-  background: #ebebff;
+  text-align: justify;
+  background: #d0d9d4;
   padding: 5px;
 }
 
 .flex-item3 {
   display: flex;
-  /* margin-left: 50px; */
 }
 
 .inner-flex-item {
@@ -198,4 +200,28 @@ body {
   justify-content: center;
   column-gap: 30px;
   width: 100%;
+}
+
+.wrap {
+  padding: 30px;
+}
+
+.wrap p {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: Poppins, sans-serif;
+  color: #42526e;
+  line-height: 32px;
+  text-align: center;
+}
+
+.aboutme-container {
+  display: grid;
+}
+
+.bg-wrap {
+  background-image: url(img/abt-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
