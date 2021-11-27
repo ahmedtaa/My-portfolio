@@ -93,14 +93,15 @@ body {
 }
 
 .main-container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 100px;
-  align-content: space-around;
-  margin: 100px 30px 150px 30px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  margin: 15px;
 }
 
+.works {
+  display: grid;
+}
 .action-btn {
   text-align: center;
 }
@@ -110,7 +111,6 @@ body {
   display: flex;
   height: 580px;
   flex-direction: column;
-  padding: 20px 20px;
   margin: -6px -6px;
   border: 1px solid #e5e5e5;
   border-radius: 3%;
@@ -178,28 +178,27 @@ body {
 }
 
 .pill-btn {
-  /* border: 2px solid orangered; */
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 14px;
   font-family: Poppins, sans-serif;
   color: #3a4a42;
   border-radius: 5px;
   text-align: justify;
   background: #d0d9d4;
-  padding: 5px;
-}
-
-.flex-item3 {
-  display: flex;
+  padding: 10px;
 }
 
 .inner-flex-item {
-  /* border: 2px solid orangered; */
   padding: 0;
   display: flex;
-  justify-content: center;
-  column-gap: 30px;
+  justify-content: space-around;
   width: 100%;
+  list-style: none;
+}
+
+.work-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 20px;
 }
 
 .wrap {
@@ -216,12 +215,7 @@ body {
 }
 
 .aboutme-container {
-  display: grid;
-}
-
-.bg-wrap {
-  background-image: url(img/abt-bg.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+  background-image: url('./img/abt-left.png'), url('./img/abt-bbgg.png');
+  background-position: left bottom, 120% 0%;
+  background-repeat: no-repeat, no-repeat;
 }
