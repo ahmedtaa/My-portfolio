@@ -248,9 +248,13 @@ button:hover {
 }
 
 .form {
+  background-image: url("./img/form-bg.png");
+  background-position: 100% 85%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-self: center;
+  align-items: center;
   padding: 64px 24px;
 }
 
