@@ -242,7 +242,89 @@ button:hover {
 
 .aboutme-container {
   display: grid;
-  background-image: url('./img/abt-left.png'), url('./img/abt-bbgg.png');
+  background-image: url("./img/abt-left.png"), url("./img/abt-bbgg.png");
   background-position: left bottom, 120% 0%;
   background-repeat: no-repeat, no-repeat;
+}
+
+.form {
+  background-image: url("./img/form-bg.png");
+  background-position: 100% 85%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding: 64px 24px;
+}
+
+.form h2 {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 58px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0;
+  position: static;
+}
+
+.form-item {
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-container input {
+  flex-grow: 1;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 24px;
+  padding: 16px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.form-container textarea {
+  padding: 12px;
+  flex-grow: 3;
+  width: 327px;
+  height: 114px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.form p {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  align-self: center;
+  color: #42526e;
+  margin-top: 5px;
+}
+
+.form ul {
+  margin-top: 44px;
+  margin-bottom: 17px;
+  align-self: center;
 }
