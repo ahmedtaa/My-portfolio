@@ -1,5 +1,3 @@
 {
-    "editor.formatOnSave": true,
-    "html.format.indentHandlebars": true,
-    "html.format.indentInnerHtml": true
+  "liveServer.settings.port": 5501
 }
