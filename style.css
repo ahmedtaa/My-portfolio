@@ -53,7 +53,6 @@ body {
 
 .box-item {
   margin-bottom: 40px;
-  align-self: center;
 }
 
 .headline > span {
@@ -186,8 +185,6 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   background-color: #36b37f;
-  margin-top: 30px;
-  margin-left: 60px;
   align-self: center;
 }
 
@@ -227,7 +224,8 @@ button:hover {
 }
 
 .wrap {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
 }
 
@@ -241,10 +239,85 @@ button:hover {
 }
 
 .aboutme-container {
-  display: grid;
   background-image: url("./img/abt-left.png"), url("./img/abt-bbgg.png");
   background-position: left bottom, 120% 0%;
   background-repeat: no-repeat, no-repeat;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-container {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.skills-title {
+  position: static;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.skill-details {
+  position: static;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.inner-skill-item {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.skill-btn {
+  position: static;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  text-align: justify;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.skills-icon {
+  margin-top: 38px;
 }
 
 .form {
@@ -256,6 +329,7 @@ button:hover {
   align-self: center;
   align-items: center;
   padding: 64px 24px;
+  margin-top: 100px;
 }
 
 .form h2 {
@@ -327,4 +401,15 @@ button:hover {
   margin-top: 44px;
   margin-bottom: 17px;
   align-self: center;
+}
+
+@media (min-width: 992px) {
+  .main-section {
+    background-image: url(img/Header-llustration-desktop@2x.png);
+  }
+
+  .headline-container {
+    margin: auto;
+    padding: 150px 300px;
+  }
 }
