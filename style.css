@@ -65,6 +65,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 24px;
+  align-items: center;
 }
 
 .headline {
@@ -111,6 +112,12 @@ body {
 
 .social-icons > li {
   display: inline;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 20px;
 }
 
 .main-container {
@@ -241,19 +248,13 @@ button:hover {
   list-style: none;
 }
 
-.work-container {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  row-gap: 20px;
-}
-
-.wrap {
+.aboutme-wrap {
   display: flex;
   flex-direction: column;
   padding: 30px;
 }
 
-.wrap p {
+.aboutme-wrap p {
   font-weight: 400;
   font-size: 25px;
   font-family: Poppins, sans-serif;
@@ -269,8 +270,7 @@ button:hover {
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .skills-container {
@@ -348,10 +348,12 @@ button:hover {
   background-image: url("./img/form-bg.png");
   background-position: 100% 85%;
   background-repeat: no-repeat;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
+  /* display: flex;
   flex-direction: column;
   align-self: center;
-  align-items: center;
+  align-items: center; */
   padding: 64px 24px;
   margin-top: 100px;
 }
@@ -360,7 +362,7 @@ button:hover {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
@@ -374,6 +376,7 @@ button:hover {
   justify-content: space-between;
   padding: 0;
   position: static;
+  margin: auto;
 }
 
 .form-item {
@@ -410,7 +413,24 @@ button:hover {
   color: #091e42;
 }
 
-.form p {
+.form-container button {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #36b37f;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.email-to {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -418,12 +438,18 @@ button:hover {
   line-height: 32px;
   align-self: center;
   color: #42526e;
+  margin: auto;
   margin-top: 5px;
 }
 
-.form ul {
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-icons {
+  margin: auto;
   margin-top: 44px;
-  margin-bottom: 17px;
   align-self: center;
 }
 
@@ -445,5 +471,56 @@ button:hover {
 
   .desktop-header-container {
     display: flex;
+  }
+
+  .work-grid {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 1171px;
+    margin: auto;
+  }
+
+  .aboutme-wrap {
+    padding: 50px 250px;
+  }
+
+  .aboutme-container {
+    background-image: url("./img/left-bg-aboutme-desktop.png"),
+      url("./img/right-bg-aboutme-desktop.png");
+    background-position: 0% 60%, 100% 30%;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .skills {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 1171px;
+    margin: auto;
+  }
+
+  .form {
+    width: 1171px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 39% 58.4%;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+  }
+
+  .footer-social-icons li {
+    margin: 0 20px;
+  }
+
+  .email-to {
+    display: none;
+  }
+
+  .form-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .form-container button {
+    align-self: start;
   }
 }

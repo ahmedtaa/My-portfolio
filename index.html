@@ -50,7 +50,7 @@
         <div class="action-btn"><img src="img/Disabled.png" alt=""></div>
         <h2 class="headline"> My Recent Works </h2>
     </section>
-    <section class="work-container">
+    <section class="work-grid">
         <article class="main-container">
             <div class="grid-item">
                 <div class="flex-item1"><img src="img/Plaholder.png" alt="placeholder"></div>
@@ -149,7 +149,7 @@
 
 
     <section class="aboutme-container">
-        <div class="wrap">
+        <div class="aboutme-wrap">
             <h2 class=" box-item headline"> About Me</h2>
             <p class="box-item"> I can help you build a product , feature or website Look through some of my work and
                 experience! If you like what you see and have a project you need coded,
@@ -198,31 +198,29 @@
             </div>
         </article>
     </section>
-
     <section class="form">
         <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form class="form-container" action="https://formspree.io/f/xjvlbpry" method="POST">
-
             <input required class="form-item" maxlength="30" type="text" id="fullName" name="full_name"
                 placeholder="Full Name">
-
-            <input required class="form-item" type="email" id="mail" name="user_email" placeholder="Email Address">
-
-            <textarea required class="form-item" maxlength="500" id="msg" name="message_area"
+            <input required class="form-item" maxlength="30" type="text" id="lastName" name="last_name"
+                placeholder="Last Name">
+            <input required class="form-item grow" type="email" id="mail" name="user_email" placeholder="Email Address">
+            <textarea required class="form-item grow" maxlength="500" id="msg" name="message_area"
                 placeholder="Enter test here"></textarea>
-
-            <button class="flex-item4" type="submit">Get in touch</button>
-
-
+            <button type="submit">Get in touch</button>
         </form>
-        <ul class="social-icons">
+
+    </section>
+    <section class="footer">
+        <ul class="social-icons footer-social-icons">
             <li> <a href="#"> <img src="img/twitter.svg" alt="twitter"></a></li>
             <li> <a href="#"> <img src="img//Linkedin-icon.svg" alt="linkedin"></a></li>
             <li> <a href="#"> <img src="img/medium.png" alt="medium"></a></li>
             <li> <a href="#"> <img src="img/github.svg" alt="github"></a></li>
             <li> <a href="#"> <img src="img/angellist.png" alt="angellist"></a></li>
         </ul>
-        <p>a.alrakhawy@gmail.com</p>
+        <p class="email-to">a.alrakhawy@gmail.com</p>
     </section>
 
 </body>
