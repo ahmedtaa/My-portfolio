@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="mobile-header-container">
+    <header class="hide-on-desktop-screen">
         <a href="#">
             <h3>Welcome</h3>
         </a>
@@ -201,14 +201,18 @@
     <section class="form">
         <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form class="form-container" action="https://formspree.io/f/xjvlbpry" method="POST">
-            <input required class="form-item" maxlength="30" type="text" id="fullName" name="full_name"
-                placeholder="Full Name">
-            <input required class="form-item" maxlength="30" type="text" id="lastName" name="last_name"
-                placeholder="Last Name">
-            <input required class="form-item grow" type="email" id="mail" name="user_email" placeholder="Email Address">
-            <textarea required class="form-item grow" maxlength="500" id="msg" name="message_area"
+            <input required class="form-item hide-on-desktop-screen" maxlength="30" type="text" id="fullName"
+                name="full_name" placeholder="Full Name">
+            <div class="fix-form hide-on-mobile-screen">
+                <input required class="form-item" maxlength="30" type="text" id="firstName" name="first_name"
+                    placeholder="First Name">
+                <input required class="form-item" maxlength="30" type="text" id="lastName" name="last_name"
+                    placeholder="Last Name">
+            </div>
+            <input required class="form-item " type="email" id="mail" name="user_email" placeholder="Email Address">
+            <textarea required class="form-item " maxlength="500" id="msg" name="message_area"
                 placeholder="Enter test here"></textarea>
-            <button type="submit">Get in touch</button>
+            <button type="form-item submit">Get in touch</button>
         </form>
 
     </section>
@@ -220,7 +224,7 @@
             <li> <a href="#"> <img src="img/github.svg" alt="github"></a></li>
             <li> <a href="#"> <img src="img/angellist.png" alt="angellist"></a></li>
         </ul>
-        <p class="email-to">a.alrakhawy@gmail.com</p>
+        <p class="email-to hide-on-desktop-screen">a.alrakhawy@gmail.com</p>
     </section>
 
 </body>
