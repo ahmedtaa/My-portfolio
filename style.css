@@ -48,6 +48,7 @@ body {
   width: 255px;
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .nav-btn {
@@ -81,15 +82,18 @@ body {
 }
 
 .headline > span {
-  color: green;
+  color: #36b37e;
 }
 
 .headline-container > p {
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
+  font-family: inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #172b4d;
   text-align: center;
   padding: 5px;
-  font-size: 20px;
 }
 
 .aboutme-container > p {
@@ -237,7 +241,7 @@ button:hover {
   border-radius: 5px;
   text-align: justify;
   background: #d0d9d4;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .inner-flex-item {
@@ -445,12 +449,16 @@ button:hover {
 
 .footer-social-icons {
   margin: auto;
-  margin-top: 44px;
+  margin-top: 24px;
   align-self: center;
 }
 
 .hide-on-mobile-screen {
   display: none;
+}
+
+.gray-line {
+  width: 0;
 }
 
 @media (min-width: 992px) {
@@ -512,6 +520,7 @@ button:hover {
   }
 
   .footer-social-icons {
+    margin: 15px;
     justify-content: center;
   }
 
@@ -557,5 +566,14 @@ button:hover {
 
   .hide-on-mobile-screen {
     display: flex;
+  }
+
+  .gray-line {
+    width: 100%;
+    color: #dfe1e6;
+  }
+
+  .nav-btn a {
+    text-decoration: none;
   }
 }
