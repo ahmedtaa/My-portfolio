@@ -492,7 +492,8 @@ button:hover {
   }
 
   .aboutme-container {
-    background-image: url("./img/left-bg-aboutme-desktop.png"),
+    background-image:
+      url("./img/left-bg-aboutme-desktop.png"),
       url("./img/right-bg-aboutme-desktop.png");
     background-position: 0% 60%, 100% 30%;
     background-repeat: no-repeat, no-repeat;
@@ -505,7 +506,9 @@ button:hover {
   }
 
   .form {
-    background-image: url(./img/bg-left-form.png), url(./img/bg-mid-form.png),
+    background-image:
+      url(./img/bg-left-form.png),
+      url(./img/bg-mid-form.png),
       url(./img/bg-right-form.png);
     background-position: 0% 100%, 30% 100%, 100% 100%;
 
