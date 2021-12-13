@@ -12,10 +12,36 @@
 <body>
 
     <header class="mobile-header-container hide-on-desktop-screen">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="#" class="closebtn" onclick="closeNav()">
+                <img src="/img/close.png" alt="">
+            </a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a onclick="closeNav()" href="#Portfolio">Portfolio</a>
+                <a onclick="closeNav()" href="#About">About</a>
+
+
+                <a onclick="closeNav()" href="#Contact">Contact</a>
+            </div>
+
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <!-- <span onclick="openNav()">open</span> -->
         <a href="#">
             <h3>Welcome</h3>
         </a>
-        <nav><img src="img/Enabled.png" alt="menu" /></nav>
+        <nav>
+            <a onclick="openNav()" href="#" id="hamBtn">
+                <img src="img/Enabled.png" alt="menu" />
+            </a>
+        </nav>
+
     </header>
 
     <!-- desktop header -start -->
@@ -228,7 +254,7 @@
         </ul>
         <p class="email-to hide-on-desktop-screen">a.alrakhawy@gmail.com</p>
     </section>
-
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
