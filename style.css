@@ -70,6 +70,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
+  text-align: left;
 }
 
 /* The navigation links inside the overlay */
@@ -100,7 +101,7 @@ body {
     font-size: 40px;
     top: 15px;
     right: 35px;
-  }  
+  }
 }
 
 .nav-list {
@@ -108,7 +109,6 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  text-align: left;
 }
 
 .nav-btn {
