@@ -130,6 +130,53 @@ body {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.modal-container {
+  display: grid;
+  grid-template-areas:
+  'title title title title title title'
+  'lang lang lang lang lang lang'
+  'para para para para para para'
+  'btn btn btn btn btn btn';
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.grid-title {
+  grid-area: title;
+  font-family: Inter,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 44px;
+color: #172B4D;
+}
+
+.grid-lang {
+  grid-area: lang;
+}
+
+.grid-para {
+  grid-area: para;
+  font-family: Inter,sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.03em;
+color: #344563;
+}
+
+.grid-btn {
+  grid-area: btn;
+  gap: 10px;
+}
+
+.disable-btn {
+  display: none;
+}
+
+
 /* The Close Button */
 .close {
   color: #aaa;
@@ -139,7 +186,8 @@ body {
 }
 
 .close img {
-  width: 100%;
+  position: absolute;
+  
 }
 
 .close:hover,
@@ -171,6 +219,23 @@ body {
   justify-content: space-between;
   list-style: none;
   padding-left: 0;
+  gap: 10px;
+}
+
+.lang-btn {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  color: #3a4a42;
+  border-radius: 5px;
+  text-align: justify;
+  background: #d0d9d4;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.align-green-btn{
+  align-self: start !important;
+  margin-top: 10px;
 }
 /* popup end */
 
@@ -707,4 +772,27 @@ button:hover {
     text-decoration: none;
     color: #344563;
   }
+
+  .modal-container {
+  display: grid;
+  
+  grid-template-areas:
+  'title title title title btn btn'
+  'lang lang lang lang btn btn'
+  'para para para para para para';
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.disable-btn {
+  display: block;
+}
+.close img {
+  float: right;
+  position: relative;
+  background-color: #EBECF0; 
+  margin-bottom: 5px;
+  
+}
+
 }
