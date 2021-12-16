@@ -2,7 +2,7 @@
 
 # My Portfilio
 
-![screenshot](./portfolio-screenshot.png)
+![screenshot](./img/portfolio-screenshot.png)
 
 ## Built With
 
