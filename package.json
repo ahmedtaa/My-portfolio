@@ -1,11 +1,28 @@
 {
-    "devDependencies": {
-        "eslint": "^8.4.1",
-        "hint": "^6.1.8",
-        "prettier": "2.5.0",
-        "stylelint": "^13.13.1",
-        "stylelint-config-standard": "^21.0.0",
-        "stylelint-csstree-validator": "^1.9.0",
-        "stylelint-scss": "^3.21.0"
-    }
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "hint": "^6.1.8",
+    "prettier": "2.5.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "name": "tempp",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedtaa/My-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedtaa/My-portfolio/issues"
+  },
+  "homepage": "https://github.com/ahmedtaa/My-portfolio#readme"
 }
