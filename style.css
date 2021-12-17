@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 
-.error { 
+.error {
   display: none;
   color: red;
 }
