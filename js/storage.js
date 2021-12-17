@@ -1,14 +1,14 @@
-const form = document.querySelector('.form-container');
-const { firstName, lastName, mail, msg } = form.elements;
+var form = document.querySelector('.form-container');
+var { firstName, lastName, mail, msg } = form.elements;
 
 form.addEventListener('change', () => {
-  const obj = {};
+  var obj = {};
 
   if (firstName.value.trim() !== '') {
-    obj.firstName = firstName.value.trim();
+    obj.fName = firstName.value.trim();
   }
   if (lastName.value.trim() !== '') {
-    obj.lastName = lastName.value.trim();
+    obj.lName = lastName.value.trim();
   }
 
   if (mail.value.trim() !== '') {
@@ -24,10 +24,11 @@ form.addEventListener('change', () => {
 
 // set the localStorage data to the form
 
-const formObj = JSON.parse(localStorage.getItem('formData'));
-const { userFirstname, userLastname, userMail, userrMsg } = formObj;
+var { fName, lName, userEmail, userMessage } = JSON.parse(
+  localStorage.getItem('formData')
+);
 
-firstName.value = userFirstname || '';
-lastName.value = userLastname || '';
-mail.value = userMail || '';
-msg.value = userrMsg || '';
+firstName.value = fName || '';
+lastName.value = lName || '';
+mail.value = userEmail || '';
+msg.value = userMessage || '';
