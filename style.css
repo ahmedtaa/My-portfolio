@@ -15,6 +15,11 @@ body {
   height: 100vh;
 }
 
+.error {
+  display: none;
+  color: red;
+}
+
 .mobile-header-container {
   /* border: 2px solid blue; */
 
